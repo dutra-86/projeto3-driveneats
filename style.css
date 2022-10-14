@@ -1,0 +1,121 @@
+body{
+    background-color: #e5e5e5;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    z-index: 10;
+    position: fixed;
+    top: 0px;
+    background-color: #CF2B2B;
+    height: 92px;
+    width: 100%;
+    font-weight: 400;
+    color: white;
+    padding-left: 21px;
+    padding-top: 16px;
+}
+.margin{
+    height: 96px;
+}
+.marca{
+    font-family: 'Righteous', cursive;
+    font-size: 44px;
+}
+.slogan{
+    margin-top: 5px;
+    font-size: 18px;
+}
+.menu_title{
+    font-family: 'Righteous', cursive;
+    font-size: 26px;
+    color: #333333;
+}
+.menu{
+    padding-left: 19px;
+    margin-top: 32px;
+}
+.opcoes{
+    margin-top: 17px;
+    display: flex;
+    justify-content: left;
+    overflow-x: scroll;
+}
+.opcao{
+    width: 172px;
+    background-color: white;
+    border-radius: 9px;
+    margin-right: 16px;
+    padding: 14px;
+    padding-bottom: 0px;
+    cursor: pointer;
+    position: inherit;
+}
+.opcao img{
+    height: 87px;
+    width: 144px;
+    object-fit: cover;
+    margin-top: 4px;
+    border-radius: 9px;
+    margin-bottom: 8px;
+}
+.txt1{
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #333333;
+}
+.txt2{
+    margin-bottom: 10px;
+    color: #a6a6a6;
+    font-weight: 300;
+    font-size: 15px;
+}
+.preco{
+    margin-bottom: 13px;
+    color: #000000;
+    font-weight: 400;
+    font-size: 16px;
+}
+.footer{
+    z-index: 10;
+    height: 92px;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0px;
+}
+.fechar_pedido{
+    width: 364px;
+    height: 61px;
+    border-radius: 30.5px;
+    bottom: 0px;
+    background-color: #cbcbcb;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.selecionado{
+    position: relative;
+    border: 5px solid #32b72f;
+    box-sizing: border-box;
+    padding: 9px;
+    padding-bottom: 0px;
+}
+.hidden{
+    display: none;
+}
+.check{
+    z-index: 8;
+    font-size: 20px;
+    position: absolute;
+    color:#32b72f;
+    bottom: 11px;
+    right: 9px;
+}

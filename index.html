@@ -1,12 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"> 
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Driven Eats</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     
+    <div class="header">
+        <div class="marca">DrivenEats</div>
+        <div class="slogan">Sua comida em 6 minutos</div>        
+    </div>
+    <div class="footer">
+        <div class="fechar_pedido">
+            <p>Selecione os 3 itens<br>para fechar o pedido</p>
+        </div>
+    </div>
+
+    <div class="margin"></div>
+    <div class="menu">
+        <div class="menu_title">
+            Primeiro, seu prato
+        </div>
+        <div class="opcoes">
+            <div class="opcao prato a" onclick="selecionar('prato','a');">
+                <img src="media/frango_yin_yang 2.png"/>
+                <div class="txt1">Frango Yin Yang</div>
+                <div class="txt2">Um pouco de batata, um pouco de salada</div>
+                <div class="preco">R$ 14,90</div>
+                <div class="check">
+                    <ion-icon name="checkmark-circle-sharp"></ion-icon>
+                </div>
+            </div>
+            <div class="opcao prato b" onclick="selecionar('prato','b');">
+                <img src="media/sanduiche_copo.png"/>
+                <div class="txt1">Sanduíche de copo</div>
+                <div class="txt2">Um delicioso sanduíche vegano servido em copos.</div>
+                <div class="preco">R$ 67,50</div>
+                <div class="check">
+                    <ion-icon name="checkmark-circle-sharp"></ion-icon>
+                </div>
+            </div>
+            <div class="opcao prato c" onclick="selecionar('prato','c');">
+                <img src="media/sanduiche_polvo.png"/>
+                <div class="txt1">Octopus Sandwich</div>
+                <div class="txt2">A especialidade da casa, feito com polvos do Oceano Índico.</div>
+                <div class="preco">R$ 98,80</div>
+                <div class="check">
+                    <ion-icon name="checkmark-circle-sharp"></ion-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu">
+        <div class="menu_title">
+            Agora, sua bebida
+        </div>
+        <div class="opcoes">
+            <div class="opcao bebida d" onclick="selecionar('bebida','d');">
+                <img src="media/coquinha_gelada 1.png"/>
+                <div class="txt1">Coquinha gelada</div>
+                <div class="txt2">Lata 350ml</div>
+                <div class="preco">R$ 4,90</div>
+                <div class="check">
+                    <ion-icon name="checkmark-circle-sharp"></ion-icon>
+                </div>
+            </div>
+            <div class="opcao bebida e" onclick="selecionar('bebida','e');">
+                <img src="media/corote.png"/>
+                <div class="txt1">Corote</div>
+                <div class="txt2">O clássico e gourmet corote. Edição limitada sabor Whatsapp.</div>
+                <div class="preco">R$ 78,00</div>
+                <div class="check">
+                    <ion-icon name="checkmark-circle-sharp"></ion-icon>
+                    </div>
+            </div>
+            <div class="opcao bebida f" onclick="selecionar('bebida','f');">
+                <img src="media/coca_alho.png"/>
+                <div class="txt1">Coca-Cola alho</div>
+                <div class="txt2">Coca-cola edição limitada sabor alho.</div>
+                <div class="preco">R$ 12,30</div>
+                <div class="check">
+                    <ion-icon name="checkmark-circle-sharp"></ion-icon>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu">
+        <div class="menu_title">
+            Por fim, sua sobremesa
+        </div>
+        <div class="opcoes">
+            <div class="opcao sobremesa g" onclick="selecionar('sobremesa','g');">
+                <img src="media/pudim 1.png"/>
+                <div class="txt1">Pudim</div>
+                <div class="txt2">Apenas pudim</div>
+                <div class="preco">R$ 7,90</div>
+                <div class="check">
+                    <ion-icon name="checkmark-circle-sharp"></ion-icon>
+                    </div>
+            </div>
+            <div class="opcao sobremesa h" onclick="selecionar('sobremesa','h');">
+                <img src="media/miojo_chocolate.png"/>
+                <div class="txt1">Miojo de chocolate</div>
+                <div class="txt2">Delicioso miojo com chocolate.</div>
+                <div class="preco">R$ 1,50</div>
+                <div class="check">
+                    <ion-icon name="checkmark-circle-sharp"></ion-icon>
+                    </div>
+            </div>
+            <div class="opcao sobremesa i" onclick="selecionar('sobremesa','i');">
+                <img src="media/rosquinha_camarao.png"/>
+                <div class="txt1">Rosquinha de camarão</div>
+                <div class="txt2">Nossa melhor sobremesa, camarão doce!</div>
+                <div class="preco">R$ 31,40</div>
+                <div class="check">
+                    <ion-icon name="checkmark-circle-sharp"></ion-icon>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="margin"></div>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>
