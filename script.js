@@ -81,7 +81,9 @@ function cancelar(){
 }
 
 function pedir_whatsapp(){
+    nome = prompt("Insira seu nome");
+    endereco = prompt("Insira seu endereço");
     preco_final = (precos[0]+precos[1]+precos[2]).toFixed(2);
-    mensagem = encodeURIComponent(`Olá, gostaria de fazer o pedido:\n- Prato: ${prato}\n- Bebida: ${bebida}\n- Sobremesa: ${sobremesa}\nTotal: R$ ${preco_final}`);
-    window.open(`https://wa.me/5511988887777?text=${mensagem}`);
+    mensagem = encodeURIComponent(`Olá, gostaria de fazer o pedido:\n- Prato: ${prato}\n- Bebida: ${bebida}\n- Sobremesa: ${sobremesa}\nTotal: R$ ${preco_final}\n\nNome:${nome}\nEndereço: ${endereco}`);
+    window.open(`https://wa.me/5511989198877?text=${mensagem}`);
 }
