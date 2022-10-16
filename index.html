@@ -25,6 +25,9 @@
         <div class="fechar_pedido">
             <p>Selecione os 3 itens<br>para fechar o pedido</p>
         </div>
+        <div class="fechar_pedido_valid hidden" onclick="fechar()">
+            <p>Fechar pedido</p>
+        </div>
     </div>
 
     <div class="margin"></div>
@@ -133,6 +136,34 @@
         </div>
     </div>
     <div class="margin"></div>
+
+    <div class="confirmar_pedido hidden">
+        <div class="window">
+            Confirme seu pedido
+            <div class="lista">
+                <div class="linha1 linhas">
+                    <div class="produto1"></div>
+                    <div class="preco1"></div>
+                </div>
+                <div class="linha2 linhas">
+                    <div class="produto2"></div>
+                    <div class="preco2"></div>
+                </div>
+                <div class="linha3 linhas">
+                    <div class="produto3"></div>
+                    <div class="preco3"></div>
+                </div>
+                <div class="total linhas">
+                    <div>TOTAL</div>
+                    <div class="p_total"></div>
+                </div>
+            </div>
+            <div class="tudo_certo">
+                Tudo certo, pode pedir!
+            </div>
+            <div class="cancelar" onclick="cancelar()">Cancelar</div>
+        </div>
+    </div>
 
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 

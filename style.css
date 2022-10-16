@@ -46,10 +46,12 @@ body{
     background-color: white;
     border-radius: 9px;
     margin-right: 16px;
-    padding: 14px;
-    padding-bottom: 0px;
     cursor: pointer;
     position: inherit;
+    border: 5px solid white;
+    box-sizing: border-box;
+    padding: 9px;
+    padding-bottom: 0px;
 }
 .opcao img{
     height: 87px;
@@ -101,6 +103,20 @@ body{
     justify-content: center;
     align-items: center;
 }
+.fechar_pedido_valid{
+    width: 364px;
+    height: 61px;
+    border-radius: 30.5px;
+    bottom: 0px;
+    background-color: #32b72f;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
 .selecionado{
     position: relative;
     border: 5px solid #32b72f;
@@ -118,4 +134,71 @@ body{
     color:#32b72f;
     bottom: 11px;
     right: 9px;
+}
+.confirmar_pedido{
+    background-color: #FFFFFFE5;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    z-index: 11;
+}
+.window{
+    position: fixed;
+    background-color: #50D074;
+    width: 377px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    border-radius: 9px;
+    padding-top: 21px;
+}
+.tudo_certo{
+    width: 329px;
+    height: 52px;
+    border-radius: 30.5px;
+    bottom: 0px;
+    background-color: white;
+    color: #32b72f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 50%;
+
+    transform: translate(-50%, 0);
+}
+.cancelar{
+    width: 329px;
+    height: 62px;
+    border-radius: 30.5px;
+    bottom: 0px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+}
+.lista{
+    font-weight: 400;
+    width: 329px;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 38px;
+    margin-bottom: 38px;
+}
+.linhas{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.total{
+    font-weight: 700;
 }
