@@ -79,3 +79,9 @@ function fechar(){
 function cancelar(){
     document.querySelector(`.confirmar_pedido`).classList.add("hidden");
 }
+
+function pedir_whatsapp(){
+    preco_final = (precos[0]+precos[1]+precos[2]).toFixed(2);
+    mensagem = encodeURIComponent(`Olá, gostaria de fazer o pedido:\n- Prato: ${prato}\n- Bebida: ${bebida}\n- Sobremesa: ${sobremesa}\nTotal: R$ ${preco_final}`);
+    window.open(`https://wa.me/5511988887777?text=${mensagem}`);
+}

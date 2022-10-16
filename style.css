@@ -52,6 +52,7 @@ body{
     box-sizing: border-box;
     padding: 9px;
     padding-bottom: 0px;
+    box-shadow: 0px 0px 5px -4px black;
 }
 .opcao img{
     height: 87px;
